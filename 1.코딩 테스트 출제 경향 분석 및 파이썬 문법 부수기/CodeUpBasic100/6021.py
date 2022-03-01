@@ -1,0 +1,6 @@
+alpha_five = input()
+print(alpha_five[0])
+print(alpha_five[1])
+print(alpha_five[2])
+print(alpha_five[3])
+print(alpha_five[4])
