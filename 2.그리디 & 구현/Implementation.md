@@ -16,7 +16,7 @@
 ![코테강의](https://user-images.githubusercontent.com/59651691/157258018-f12731e3-78e5-4f2c-bc07-73937b2c5156.JPG)
 
 ```python
-# 동, 북, 서, 남     [direction_x], [direction_y}
+# 동, 북, 서, 남     [direction_x], [direction_y]
 dx = [0,-1,0,1]
 dy = [1,0,-1,0]
 

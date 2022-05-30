@@ -155,7 +155,7 @@ input() 함수는 한줄의 문자열을 입력받는 함수
 map() 함수는 리스트의 모든 원소에 각각 특정한 함수를 적용할 때 사용
 예시) 공백을 기준으로 구분된 데이터를 입력 받을 때
 => list(map(int, input().split()))
-예시) 공백을 기준으로 구분된 데이터의 개수가 많지 않다면, 다음곽 ㅏㅌ이 사용
+예시) 공백을 기준으로 구분된 데이터의 개수가 많지 않다면, 다음과 같이 사용
 a,b,c = map(int, input().split())
 
 '''
@@ -360,7 +360,7 @@ print(counter['green']) #1    'green'이 등장한 획수 출력
 print(dict(counter))    #{'red': 2, 'blue': 3, 'green': 1} 사전 자료형으로 반환
 
 #최대 공약수와 최소 공배수
-''' 최대 공약수를 구해야할 때 math 라이브러리의 gdc() 함수를 이용할 수 있다.'''
+''' 최대 공약수를 구해야할 때 math 라이브러리의 gcd() 함수를 이용할 수 있다.'''
 import math
 def lcm(a,b):
     return a*b // math.gcd(a,b)
