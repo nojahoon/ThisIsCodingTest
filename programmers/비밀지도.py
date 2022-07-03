@@ -5,8 +5,10 @@ def solution(n, arr1, arr2):
 
     for i in range(n):
         bin_arr.append(arr1[i] | arr2[i])
-    for treasure in bin_arr:
-        treasure = treasure_arr.append((bin(treasure).replace('0b','')).zfill(n))
+
+    for int_to_bin in bin_arr:
+        treasure_arr.append((bin(int_to_bin).replace('0b','')).zfill(n))
+
     for treasure in treasure_arr:
         answer=''
         for each in treasure:
