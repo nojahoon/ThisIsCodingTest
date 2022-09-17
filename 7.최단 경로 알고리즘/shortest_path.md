@@ -7,6 +7,8 @@
   + 모든 지점에서 다른 모든 지점까지의 최단 경로
 - 각 지점은 그래프에서 노드로 표현
 - 지점 간 연결된 도로는 그래프에서 간선으로 표현
+<img width="414" alt="최단 경로 문제" src="https://user-images.githubusercontent.com/59651691/190856500-eeb083fc-7e66-4f50-8182-6b8dd3bc553b.PNG">
+
 
 
 
@@ -28,28 +30,57 @@
     
 - 알고리즘 동작 과정에서 최단 거리 테이블은 각 노드에 대한 현재까지의 최단 거리 정보를 가지고 있습니다.
 - 처리 과정에서 더 짧은 경로를 찾으면 '이제부터는 이 경로가 짧은 경로야.'라고 갱신합니다.
+<img width="317" alt="다익스트라 최단 경로 알고리즘" src="https://user-images.githubusercontent.com/59651691/190856524-0d2e1218-f449-46a6-858f-bb5792b49ef9.PNG">
+
+<img width="323" alt="최단 경로 알고리즘2" src="https://user-images.githubusercontent.com/59651691/190856527-c50e6546-206b-49e3-ab17-15c2b8122c17.PNG">
+
 
 
 
 ## 다익스트라 알고리즘 : 동작과정 살펴보기
 
 
-- [초기 상태] 그래프를 준비하고 출발 노드를 설정합니다.
+- [초기 상태] 그래프를 준비하고 출발 노드를 설정합니다.    
+
+<img width="708" alt="초기 상태" src="https://user-images.githubusercontent.com/59651691/190856550-905f6c3c-632c-45c4-8d57-623a846f9502.PNG">  
 
 
-- [Step 1] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 1번 노드를 처리합니다.
+
+- [Step 1] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 1번 노드를 처리합니다.    
+
+<img width="849" alt="Step1" src="https://user-images.githubusercontent.com/59651691/190856555-fee4ec25-95e5-4d37-bd2d-d27b7b2e0a2b.PNG">  
 
 
-- [Step 2] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 4번 노드를 처리합니다.
+
+- [Step 2] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 4번 노드를 처리합니다.    
+
+<img width="849" alt="Step 2" src="https://user-images.githubusercontent.com/59651691/190856562-b767704f-648a-4351-9f2d-dbeda72bbc15.PNG">  
 
 
-- [Step 3] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 2번 노드를 처리합니다.
 
-- [Step 4] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 5번 노드를 처리합니다.
+- [Step 3] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 2번 노드를 처리합니다.    
 
-- [Step 5] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 3번 노드를 처리합니다.
+<img width="849" alt="step 3" src="https://user-images.githubusercontent.com/59651691/190856574-2c99f60b-f7bd-406c-8b9c-01ff77267014.PNG">  
 
-- [Step 6] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 6번 노드를 처리합니다.
+
+
+- [Step 4] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 5번 노드를 처리합니다.    
+
+<img width="846" alt="Step 4" src="https://user-images.githubusercontent.com/59651691/190856581-95fb99b1-ecc3-46ca-a95c-18e0c7687590.PNG"> 
+
+
+  
+- [Step 5] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 3번 노드를 처리합니다.    
+
+<img width="849" alt="Step 5" src="https://user-images.githubusercontent.com/59651691/190856585-932c3e7a-72ed-499b-aea2-cf604f9536e2.PNG">  
+
+
+
+- [Step 6] 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 6번 노드를 처리합니다.    
+
+<img width="849" alt="step 6" src="https://user-images.githubusercontent.com/59651691/190856589-96e2a67c-d1e8-45f9-9e8a-0aa4f59887ee.PNG">  
+
+
 
 
 ## 다익스트라 알고리즘의 특징
@@ -130,7 +161,7 @@ for i in range(1,n+1):
 ```
 
 
-##다익스트라 알고리즘: 간단한 구현 방법 성능 분석
+## 다익스트라 알고리즘: 간단한 구현 방법 성능 분석
 
 - 총 O(V)번에 걸쳐서 최단 거리가 가장 짧은 노드를 매번 선형 탐색해야 합니다.
 - 따라서 전체 시간 복잡도는 O(V^2)입니다.
