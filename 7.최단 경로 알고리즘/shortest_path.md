@@ -254,22 +254,47 @@ print(result)
 
 - [초기 상태] 그래프를 준비하고 출발 노드를 설정하여 우선순위 큐에 삽입합니다.
 
+<img width="705" alt="초기 상태" src="https://user-images.githubusercontent.com/59651691/190910575-9692aa0c-872b-4fba-b212-15acbab1c6bd.PNG">
+
+
 - [Step 1] 우선순위 큐에서 원소를 꺼냅니다. 1번 노드는 아직 방문하지 않았으므로 이를 처리합니다.
+
+<img width="885" alt="Step1" src="https://user-images.githubusercontent.com/59651691/190910579-d21c81cd-645e-4be8-84ee-eeeab83761e5.PNG">
+
 
 - [Step 2] 우선순위 큐에서 원소를 꺼냅니다. 4번 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
+<img width="883" alt="Step2" src="https://user-images.githubusercontent.com/59651691/190910581-7b2b1d02-607a-47d8-9469-f9bc9eac9169.PNG">
+
+
 - [Step 3] 우선순위 큐에서 원소를 꺼냅니다. 2번 노드는 아직 방문하지 않았으므로 이를 처리합니다.
+
+<img width="886" alt="Step3" src="https://user-images.githubusercontent.com/59651691/190910585-3a244e4b-466d-43fa-b55d-8ce8b57b6eb4.PNG">
+
 
 - [Step 4] 우선순위 큐에서 원소를 꺼냅니다. 5번 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
+<img width="886" alt="Step4" src="https://user-images.githubusercontent.com/59651691/190910587-c69977c4-f2fb-4ad5-8303-6db65427636b.PNG">
+
+
 - [Step 5] 우선순위 큐에서 원소를 꺼냅니다. 3번 노드는 아직 방문하지 않았으므로 이를 처리합니다.
+
+<img width="884" alt="Step5" src="https://user-images.githubusercontent.com/59651691/190910589-5b54870b-a387-46f5-bb6f-f1938f0c174d.PNG">
+
 
 - [Step 6] 우선순위 큐에서 원소를 꺼냅니다. 3번 노드는 이미 방문했으므로 무시합니다.
 
+<img width="670" alt="Step6" src="https://user-images.githubusercontent.com/59651691/190910592-fdb88820-6621-4ecc-ad7f-70fd67aca795.PNG">
+
+
 - [Step 7] 우선순위 큐에서 원소를 꺼냅니다. 6번 노드는 아직 방문하지 않았으므로 이를 처리합니다.
+
+<img width="886" alt="Step7" src="https://user-images.githubusercontent.com/59651691/190910595-f84d45e9-3cff-44c2-9358-26dc5c40500f.PNG">
+
 
 - [Step 8] 우선순위 큐에서 원소를 꺼냅니다. 3번 노드는 이미 방문했으므로 무시합니다.
 
+<img width="666" alt="Step8" src="https://user-images.githubusercontent.com/59651691/190910597-13ebe5c6-07d0-4f26-add0-2979c026ac4a.PNG">
 
 
 ```python
