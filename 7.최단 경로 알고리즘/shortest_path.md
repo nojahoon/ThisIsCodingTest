@@ -374,19 +374,34 @@ for i in range(1,n+1):
 - 각 단계마다 특정한 노드 k를 거쳐 가는 경우를 확인합니다.
   + a에서 b로 가는 최단 거리보다 a에서 k를 거쳐 b로 가는 거리가 더 짧은지 검사합니다.
 - 점화식은 다음과 같습니다.
+<img width="254" alt="점화식" src="https://user-images.githubusercontent.com/59651691/191046149-e562d7aa-b504-4cd6-b70f-7d98c59b5d13.PNG">
 
 
 ## 플로이드 워셜 알고리즘: 동작 과정 살펴보기
 
-- [초기 상태] 그래프를 준비하고 최단 거리 테이블을 초기화합니다.
+- [초기 상태] 그래프를 준비하고 최단 거리 테이블을 초기화합니다.  
+
+<img width="710" alt="초기상태" src="https://user-images.githubusercontent.com/59651691/191046177-a2a07257-4428-405a-a358-ca1eb51d903f.PNG">
 
 - [Step 1] 1번 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
+<img width="873" alt="Step1" src="https://user-images.githubusercontent.com/59651691/191046218-e5385299-da75-43de-b69f-d044d081e57a.PNG">
+
+
 - [Step 2] 2번 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
+
+<img width="864" alt="Step2" src="https://user-images.githubusercontent.com/59651691/191046253-f8f51ceb-0cc0-4477-9041-5bfcc04e3726.PNG">
+
 
 - [Step 3] 3번 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
+<img width="869" alt="Step3" src="https://user-images.githubusercontent.com/59651691/191046282-1bd90153-794e-4248-850b-9a1570847438.PNG">
+
+
 - [Step 4] 4번 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
+
+<img width="870" alt="Step4" src="https://user-images.githubusercontent.com/59651691/191046296-88dc8979-dc7d-4449-963b-8a7b06170b4f.PNG">
+
 
 ```python
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
